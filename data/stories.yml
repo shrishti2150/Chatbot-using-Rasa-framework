@@ -1,0 +1,143 @@
+version: "2.0"
+
+stories:
+
+# - story: happy path
+#   steps:
+#   - intent: greet
+#   - action: utter_greet
+#   - intent: mood_great
+#   - action: utter_happy
+#   - action: utter_UsernamePassword
+
+# - story: sad path 1
+#   steps:
+#   - intent: greet
+#   - action: utter_greet
+#   - intent: mood_unhappy
+#   - action: utter_cheer_up
+#   - action: utter_did_that_help
+#   - intent: affirm
+#   - action: utter_happy
+#   - action: utter_UsernamePassword
+
+# - story: sad path 2
+#   steps:
+#   - intent: greet
+#   - action: utter_greet
+#   - intent: mood_unhappy
+#   - action: utter_cheer_up
+#   - action: utter_did_that_help
+#   - intent: deny
+#   - action: utter_goodbye
+
+- story: Attendance
+  steps:
+  - intent: Attendance
+  - action: action_print_table
+  # - action: utter_Attendance
+
+- story: Books
+  steps:
+  - intent: Books
+  - action: utter_Books
+
+- story: Syllabus
+  steps:
+  - intent: Syllabus
+  - action: utter_Syllabus
+
+- story: Time_Table
+  steps:
+  - intent: Time_Table
+  - action: utter_Time_Table
+
+- story: Exam_Result
+  steps:
+  - intent: Exam_Result
+  - action: utter_Exam_Results
+
+- story: Passing_Requirement
+  steps:
+  - intent: Passing_Requirement
+  - action: utter_Passing_Requirement
+
+- story: Lab_Manual
+  steps:
+  - intent: Lab_Manual
+  - action: utter_Lab_Manual
+
+- story: Lab_Classes
+  steps:
+  - intent: Lab_Classes
+  - action: utter_Lab_Classes
+
+- story: Instructor
+  steps:
+  - intent: Instructor
+  - action: utter_Instructor
+
+- story: Holidays
+  steps:
+  - intent: Holidays
+  - action: utter_Holiday
+
+- story: Exam_Portions
+  steps:
+  - intent: Exam_Portions
+  - action: utter_Exam_Portions
+
+- story: Exam_Components
+  steps:
+  - intent: Exam_Components
+  - action: utter_Exam_Components
+
+- story: Exam_Dates
+  steps:
+  - intent: Exam_Dates
+  - action: utter_Exam_Dates
+
+- story: Credits
+  steps:
+  - intent: Credits
+  - action: utter_Credits
+
+- story: Course_ID
+  steps:
+  - intent: Course_ID
+  - action: utter_Course_ID
+
+- story: Handout
+  steps:
+  - intent: Handout
+  - action: utter_Handout
+
+- story: StudentAttendance
+  steps:
+  - intent: StudentAttendance
+  - action: action_StudentAttendance
+
+- story: marks
+  steps:
+  - intent: marks
+  - action: action_marks
+
+- story: pastyear
+  steps:
+  - intent: pastyear
+  - action: utter_pastyear
+
+- story: videos
+  steps:
+  - intent: videos
+  - action: utter_videos
+
+
+
+
+# - story: interactive_story_1
+#   steps:
+#   - intent: greet
+#   - action: utter_greet
+#   - intent: greet
+#   - action: utter_greet

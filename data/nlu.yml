@@ -1,0 +1,251 @@
+version: "2.0"
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+    - hiiiiiiii
+- intent: goodbye
+  examples: |
+    - good afternoon
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+# - intent: Attendance
+#   examples: |
+#     - course attendance requirement
+#     - Attendance required to pass a course
+#     - attendance required for this course
+
+- intent: Books
+  examples: |
+    - what are the books required for this course
+    - course books
+    - supplementary books needed
+    - what books should i study from
+    - bookf for thsi course
+    - what book should i refer to
+    - books needed for this course
+- intent: Syllabus
+  examples: |
+    - course content
+    - syllabus for this course
+    - what is the syllabus for this course
+    - how is the content of the course spread
+- intent: Time_Table
+  examples: |
+    - what are the class timings
+    - do we have lab tomorrow?
+    - do we have class today?
+    - lab timings
+    - timings for lab
+    - what hour do i have lab
+    - what hour do oi have class
+    - how many classes do wehave in a week 
+# - intent: Exam_Result
+#   examples: |
+#     - Have the papers been graded?
+#     - are the results out yet?
+#     - how much did i get in my t1s
+#     - how much did i get in my compre
+#     - when will the exam results be out
+- intent: Passing_Requirement
+  examples: |
+    - how much do i need to pass?
+    - what is the passing requirement for this course
+    - what is the criteria to complete this course
+    - what are the passing marks
+    - hoe much do ineed to pass 
+# - intent: Lab_Manual
+#   examples: |
+#     - where can i get the lab manual for this course
+#     - Lab manual
+#     - is there a link for the lab manual
+#     - lab manual for this course
+# - intent: Lab_Classes
+#   examples: |
+#     - Do we have lab classes for this course?
+#     - how many labs are there for this course
+#     - number of labs for this course
+#     - what are the labs for this course
+- intent: Instructor
+  examples: |
+    - who is the instructor for this course?
+    - who teaches dd
+    - Which professor teaches this course
+    - who are the teahcers for did
+    - who os the instructor inchare gpr did
+    - who will teach this course
+    - who are the professors for this course
+
+- intent: Holidays
+  examples: |
+    - is there a holidy today?
+    - do we have a holiday tomorrow?
+    - holidays this semester
+    - is there a holiday for college events
+    - will class happen today
+    - is there class happening tomorrow
+- intent: Exam_Portions
+  examples: |
+    - exam portions
+    - exam syllabus
+    - what are the portions for t1s
+    - what are the portion for t2s
+    - q1 syllabus
+    - q2 syllabus
+    - compree exam portions
+- intent: Exam_Components
+  examples: |
+    - exam components
+    - how many components does this course have
+    - do we have any assignments for this course
+    - test components
+    - hpw many tetsts do we have for this course
+- intent: Exam_Dates
+  examples: |
+    - compre dates
+    - exam dates
+    - t1 dates
+    - t2 dates
+    - whaen do we have exams
+    - when are the tests
+    - whaen are the quizzes
+- intent: Credits
+  examples: |
+    - how many credits is this course
+    - course credit
+    - number of credits for this course
+- intent: Course_ID
+  examples: |
+    - wha is the course id for this course
+    - course no.
+    - course code
+- intent: Handout
+  examples: |
+    - Handout
+    - course handout
+    - where can i find the handout
+
+- intent: Username
+  examples: |
+    - [2018A7PS0181U]{"entity":"Username","value":"2018A7PS0181U"}
+    - [2018A7PS0206U]{"entity":"Username","value":"2018A7PS0206U"}
+    - [2019A7PS0801U]{"entity":"Username","value":"2018A7PS0801U"}
+
+- intent: Password
+  examples: |
+    - [superman]{"entity":"Password","value":"superman"}
+    - [batman]{"entity":"Password","value":"batman"}
+    - [spiderman]{"entity":"Password","value":"spiderman"}
+
+- intent: StudentAttendance
+  examples: | 
+    - what is my attendance?
+    - how much attendance do I have
+    - my attendance in a subject
+    - attendance required
+    - attendance
+
+- intent: marks
+  examples: |
+    - how much did I score in this test?
+    - what is my score?
+    - my marks in a subject
+    - what are my marks
+    - my score in the most recent test
+    - marks
+    - score
+  
+- intent: pastyear
+  examples: |
+    - Where can I find past year question papers
+    - Link to past year papers
+    - Question papers
+    - previous years question papers
+    - where can i find question papers for this course
+
+- intent: videos
+  examples: |
+    - video resources for this course
+    - what youtube videos can i watch to understand this course better
+    - video links for this course
+    - which youtube channel should i follow for this course
+    - videos i can watch to understand this course better
+
+
+
+

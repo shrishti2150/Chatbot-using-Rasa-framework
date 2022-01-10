@@ -1,0 +1,118 @@
+version: '2.0'
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+
+intents:
+- Username
+- marks
+- greet
+- Password
+- goodbye
+- affirm
+- deny
+- mood_great
+- mood_unhappy
+- bot_challenge
+- Attendance
+- Books
+- Syllabus
+- Time_Table
+- Exam_Result
+- Passing_Requirement
+# - Lab_Manual
+# - Lab_Classes
+- Instructor
+- Holidays
+# - Exam_Portions
+- Exam_Components
+# - Exam_Dates
+- Credits
+- Course_ID
+- Handout
+- StudentAttendance
+- pastyear
+- videos
+entities:
+- Password
+- Username
+slots:
+  Username:
+    type: text
+    influence_conversation: true
+  Password:
+    type: text
+    influence_conversation: true
+responses:
+  utter_greet:
+  - text: "Hey! How are you?"
+  utter_cheer_up:
+  - text: 'Here is something to cheer you up:'
+    image: https://i.imgur.com/nGF1K8f.jpg
+  utter_did_that_help:
+  - text: "Did that help you?"
+  utter_happy:
+  - text: "Good to know! what can I do for you?"
+  utter_goodbye:
+  - text: "Bye"
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+  # utter_Attendance:
+  # - text: You should have a minimum of 60% attendance to pass this course.
+  utter_Books:
+  - text: "The full list of books for this course can be viewed in the course handout: https://docs.google.com/document/d/1PcHrOBqDI25L6qKcNupZusUfDMTr01Vs--yh0LlZMy8/edit?usp=sharing&urp=gmail_link"
+  utter_Syllabus:
+  - text: "The course content can be viewed in the handout https://docs.google.com/document/d/1PcHrOBqDI25L6qKcNupZusUfDMTr01Vs--yh0LlZMy8/edit?usp=sharing&urp=gmail_link"
+  utter_Time_Table:
+  - text: "Your time table can be viewed on the bits erp website https://erp.bits-pilani.ac.in/"
+  # utter_Exam_Results:
+  # - text: Your result will be available on the notice board within 2 weeks of the exam date or will be mailed to by your respective instructor
+  utter_Passing_Requirement:
+  - text: "To succesfully complete this course your pre-compre total should be above 0, and you should have a minimum 60% attendance"
+  # utter_Lab_Manual:
+  # - text: "The lab manual for this course can be accessed at the following link"
+  # utter_Lab_Classes:
+  # - text: "The list of labs designed for this course can be viewed in the link provided below"
+  utter_Instructor:
+  - text: "The Course Instructors are Dr. Nilesh, Dr. Shazia, Dr. Jagdish, Dr. Vilas Gaidhane, Dr.Abdul Rajak, Dr. R Swarnalatha The instructor in-charge is Dr Nilesh Goel."
+  utter_Holiday:
+  - text: "There is no holiday unless otherwise mentioned in the academic calendar"
+  # utter_Exam_Portions:
+  # - text: "Exam portions will be communicated by the IC a week before the Examination component"
+  utter_Exam_Components:
+  - text: "The examination components of this course include Test1, Quiz 1, Test 2, Labs, Project and Compre."
+  # utter_Exam_Dates:
+  # - text: "Exam dates can be viewed in the handout from the link provided below"
+  utter_Credits:
+  - text: "This is a 3 credit course"
+  utter_Course_ID:
+  - text: "The Course No. for this course is ECE F215 / EEE F215 / INSTR F215 / CS F215"
+  utter_Handout:
+  - text: "The course handout can be viewed at the link given below"
+  utter_ask_Username:
+  - text: "Please enter username"
+  utter_ask_Password:
+  - text: "Please enter password"
+  utter_details_thanks:
+  - text: "Login Succesful"
+  utter_pastyear:  
+  - text: "Here is the link for past year papers http://webopac.bits-dubai.ac.ae/AutoLib/"
+  utter_videos:
+  - text: "Here are some youtube links you can checkout 1. https://www.youtube.com/watch?v=Hog_iePXxDA 2. https://www.youtube.com/watch?v=qHnZbHzNthw&list=PLoK2Lr1miEm8b6Vv5zAfsbMEPZ1C7fCQw 3. https://www.youtube.com/watch?v=ut8PLMB59bg&list=PLI0y8_sKQPD991sipHcqWNOJ0nmCnqPSw"
+actions:
+- action_StudentAttendance
+- action_UsernamePassword
+- action_marks
+- action_print_table
+- action_submit
+- utter_details_thanks
+- utter_greet
+forms:
+  ID_form:
+    required_slots:
+      Username:
+      - type: from_entity
+        entity: Username
+      Password:
+      - type: from_entity
+        entity: Password
